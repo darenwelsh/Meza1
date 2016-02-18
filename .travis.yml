@@ -2,8 +2,7 @@ sudo: required
 
 env:
   #matrix:
-  - OS_TYPE=centos OS_VERSION=7 ANSIBLE_VERSION=1.9.2
-  - IDADDR=192.168.56.56
+  - OS_TYPE=centos OS_VERSION=7 ANSIBLE_VERSION=1.9.2 IDADDR=192.168.56.56
 
 branches:
   only:
