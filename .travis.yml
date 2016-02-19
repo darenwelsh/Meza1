@@ -23,5 +23,5 @@ before_install:
   
 script:
  # Run tests in Container
- - sudo docker run --rm=true -v `pwd`:/ansible-apache:rw weldpua2008/docker-ansible:${OS_TYPE}${OS_VERSION}_v${ANSIBLE_VERSION} /bin/bash -c "curl -LO https://raw.githubusercontent.com/enterprisemediawiki/meza/master/setup.sh && sudo bash setup.sh --ipaddr=192.168.56.56"
+ - sudo docker run --rm=true -v `pwd`:/ansible-apache:rw weldpua2008/docker-ansible:${OS_TYPE}${OS_VERSION}_v${ANSIBLE_VERSION} /bin/bash -c "curl -LO https://raw.githubusercontent.com/enterprisemediawiki/meza/master/setup.sh && sudo bash setup.sh && echo -ne '\n'"
 
